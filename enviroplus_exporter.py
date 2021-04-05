@@ -100,6 +100,7 @@ def get_temperature(factor):
     """Get temperature from the weather sensor"""
     # Tuning factor for compensation. Decrease this number to adjust the
     # temperature down, and increase to adjust up
+    factor = 2.25
     raw_temp = bme280.get_temperature()
 
     if factor:
